@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kkk"
+    tools:context="com.example.shahi.kamonstore.serialNo.receiptDet">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/Re_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/receipt1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Re_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Re_details"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/barcode"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Re_ser_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Re_bar"
+            android:layout_alignStart="@+id/Re_bar"
+            android:layout_below="@+id/Re_bar"
+            android:layout_marginTop="14dp"
+            android:text="@string/serial_number"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Re_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Re_ser_no"
+            android:layout_alignStart="@+id/Re_ser_no"
+            android:layout_below="@+id/Re_ser_no"
+            android:layout_marginTop="16dp"
+            android:text="@string/date"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Re_date"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/row1_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/products"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/row1_col2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/quantities"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/row1_col3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/status"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+ <TableRow
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginTop="5dp"
+     android:layout_marginBottom="5dp"
+     tools:ignore="UselessParent">
+     <TextView
+         android:id="@+id/row2_col1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="25dp"
+         android:layout_marginRight="25dp"
+         android:textColor="#000"
+         android:textSize="18sp"
+         tools:ignore="RtlHardcoded" />
+     <TextView
+         android:id="@+id/row2_col2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="25dp"
+         android:layout_marginRight="25dp"
+         android:textColor="#000"
+         android:textSize="18sp"
+         tools:ignore="RtlHardcoded" />
+
+     <CheckBox
+         android:id="@+id/checkBox_row3"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"/>
+ </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/row3_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/row3_col2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle1"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tableLayout"
+            android:layout_toRightOf="@+id/restore"
+            android:layout_toEndOf="@+id/restore" />
+
+        <TextView
+            android:id="@+id/restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_choose_the_restore"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignLeft="@+id/Re_date"
+            android:layout_alignStart="@+id/Re_date"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RtlHardcoded" />
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
